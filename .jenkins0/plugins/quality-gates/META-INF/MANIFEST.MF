@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: ishekerova
+Build-Jdk: 1.8.0_66
+Extension-Name: quality-gates
+Specification-Title: Fails the build whenever the Quality Gates criter
+ ia in the Sonar analysis aren't met (the project Quality Gates status
+  is different than "Passed")
+Implementation-Title: quality-gates
+Implementation-Version: 2.5
+Group-Id: org.jenkins-ci.plugins
+Short-Name: quality-gates
+Long-Name: Quality Gates Plugin
+Url: https://wiki.jenkins-ci.org/display/JENKINS/Quality+Gates+Plugin
+Plugin-Version: 2.5
+Hudson-Version: 1.625.3
+Jenkins-Version: 1.625.3
+Plugin-Developers: Ivana Shekerova:ivanash:,Eleni Grozdani:egrozdani:,
+ Dimitar Pop-Dimitrov:dpd90:
+

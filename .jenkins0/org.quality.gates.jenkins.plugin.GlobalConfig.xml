@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<org.quality.gates.jenkins.plugin.GlobalConfig plugin="sonar-quality-gates@1.0.6">
+  <listOfGlobalConfigData/>
+  <globalConfigurationService>
+    <listOfGlobalConfigInstances reference="../../listOfGlobalConfigData"/>
+  </globalConfigurationService>
+</org.quality.gates.jenkins.plugin.GlobalConfig>

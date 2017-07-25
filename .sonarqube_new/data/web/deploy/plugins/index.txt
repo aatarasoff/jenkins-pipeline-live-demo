@@ -1,0 +1,4 @@
+findbugs,false,sonar-findbugs-plugin.jar|ba3bf6a33e2508441e67ca94faea5a6c
+java,true,sonar-java-plugin-4.11.0.10660.jar|d92592d64e31f91106a2aa1a81dd49a8
+pmd,false,sonar-pmd-plugin-2.6.jar|f6f655d89f546cccc0997e3d3817f6db
+checkstyle,false,checkstyle-sonar-plugin-3.7.jar|69d0b4d513b7d4da3daa5681161b1ce8

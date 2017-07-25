@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<quality.gates.jenkins.plugin.GlobalConfig plugin="quality-gates@2.5">
+  <listOfGlobalConfigData/>
+  <globalConfigurationService>
+    <listOfGlobalConfigInstances reference="../../listOfGlobalConfigData"/>
+  </globalConfigurationService>
+</quality.gates.jenkins.plugin.GlobalConfig>

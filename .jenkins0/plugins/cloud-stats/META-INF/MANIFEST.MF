@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: ogondza
+Build-Jdk: 1.8.0_131
+Extension-Name: cloud-stats
+Specification-Title: Report Jenkins dynamic provisioning activities an
+ d statistics
+Implementation-Title: cloud-stats
+Implementation-Version: 0.13
+Group-Id: org.jenkins-ci.plugins
+Short-Name: cloud-stats
+Long-Name: Cloud Statistics Plugin
+Url: http://wiki.jenkins-ci.org/display/JENKINS/Cloud+Statistics+Plugin
+Plugin-Version: 0.13
+Hudson-Version: 1.580
+Jenkins-Version: 1.580
+Plugin-Developers: Oliver Gondža:olivergondza:ogondza@gmail.com
+

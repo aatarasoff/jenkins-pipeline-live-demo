@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: kohsuke
+Build-Jdk: 1.7.0_15
+Extension-Name: metrics
+Specification-Title: This plugin exposes the Metrics API to Jenkins pl
+ ugins.
+Implementation-Title: metrics
+Implementation-Version: 3.1.2.10
+Plugin-Class: jenkins.metrics.api.Metrics
+Group-Id: org.jenkins-ci.plugins
+Short-Name: metrics
+Long-Name: Metrics Plugin
+Url: http://wiki.jenkins-ci.org/display/JENKINS/Metrics+Plugin
+Plugin-Version: 3.1.2.10
+Hudson-Version: 1.580
+Jenkins-Version: 1.580
+Plugin-Dependencies: jackson2-api:2.5.4
+Plugin-Developers: Stephen Connolly:stephenconnolly:
+

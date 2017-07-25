@@ -1,0 +1,34 @@
+<div>
+  <p>
+    This field allows to pass some configuration parameters to SonarQube.
+    Parameters defined here take precedence over the ones potentially defined in the specified sonar-project.properties file.
+    It is even possible to specify all SonarQube parameters here and leave the "Path to project properties" input field empty.
+  </p>
+<pre style="border: solid #BBBBBB 1px; padding: 1em">
+# unique project identifier (required)
+sonar.projectKey=my:project
+
+# project metadata (used to be required, optional since SonarQube 6.1)
+sonar.projectName=My project
+sonar.projectVersion=1.0
+
+# path to source directories (required)
+sonar.sources=srcDir1,srcDir2
+
+# path to test source directories (optional)
+sonar.tests=testDir1,testDir2
+
+# path to Java project compiled classes (optional)
+sonar.java.binaries=bin
+
+# comma-separated list of paths to libraries (optional)
+sonar.java.libraries=path/to/library.jar,path/to/classes/dir
+
+# Additional parameters
+sonar.my.property=value
+</pre>
+  <p>
+    See <a target="_new" href="http://redirect.sonarsource.com/doc/analyzing-with-sq-runner.html">Analyzing with SonarQube Scanner</a> for detailed information on configuring a
+    SonarQube analysis with the SonarQube Scanner.
+  </p>
+</div>

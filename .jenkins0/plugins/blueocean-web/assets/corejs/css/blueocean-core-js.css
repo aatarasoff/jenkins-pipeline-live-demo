@@ -1,0 +1,302 @@
+.ParametersRunButton .inputParameters {
+  color: #4A4A4A;
+  white-space: normal;
+}
+.replay-button-component {
+  display: inline-block;
+}
+.replay-button-component .replay-button {
+  display: inline-block;
+  cursor: pointer;
+}
+.replay-button-component .svg-icon {
+  display: none;
+}
+.replay-button-component.icon-button {
+  height: 24px;
+}
+.replay-button-component.icon-button .replay-button {
+  width: 24px;
+  height: 24px;
+  background: transparent;
+  border: 0;
+  position: relative;
+}
+.replay-button-component.icon-button .replay-button .svg-icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.replay-button-component.icon-button .button-label {
+  display: none;
+}
+.replay-button-component .svg-icon {
+  fill: #4A90E2;
+}
+.replay-button-component .svg-icon:hover {
+  fill: #1C436A;
+}
+.replay-button-component.dark .btn {
+  background: transparent;
+  color: white;
+  border-color: white;
+}
+.replay-button-component.dark .svg-icon {
+  fill: white;
+}
+.replay-button-component.dark .svg-icon:hover {
+  fill: #CCC;
+}
+.run-button-component {
+  display: inline-block;
+}
+.run-button-component .run-button,
+.run-button-component .stop-button {
+  display: inline-block;
+  cursor: pointer;
+}
+.run-button-component .svg-icon {
+  display: none;
+}
+.run-button-component.icon-button {
+  height: 24px;
+}
+.run-button-component.icon-button .run-button,
+.run-button-component.icon-button .stop-button {
+  width: 24px;
+  height: 24px;
+  background: transparent;
+  border: 0;
+  position: relative;
+}
+.run-button-component.icon-button .run-button .svg-icon,
+.run-button-component.icon-button .stop-button .svg-icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.run-button-component.icon-button .stop-button {
+  /* asset has different padding than material-icon asset used in .run-button: nudge it slightly */
+  top: 2px;
+  left: 2px;
+}
+.run-button-component.icon-button .stop-button.stopping {
+  opacity: 0.4;
+  cursor: auto;
+}
+.run-button-component.icon-button .button-label {
+  display: none;
+}
+.run-button-component .svg-icon,
+.run-button-component .svg-icon-inner {
+  fill: #4A90E2;
+}
+.run-button-component .svg-icon:hover {
+  fill: #1C436A;
+}
+.run-button-component .svg-icon:hover .svg-icon-inner {
+  fill: #1C436A;
+}
+.run-button-component.dark .btn {
+  background: transparent;
+  color: white;
+  border-color: white;
+}
+.run-button-component.dark .svg-icon,
+.run-button-component.dark .svg-icon-inner {
+  fill: white;
+}
+.run-button-component.dark .svg-icon:hover {
+  fill: #CCC;
+}
+.run-button-component.dark .svg-icon:hover .svg-icon-inner {
+  fill: #CCC;
+}
+.BlueOceanLogo,
+.BlueOceanLogo:hover {
+  display: flex;
+  color: white;
+  text-decoration: none;
+  align-items: center;
+  font-size: 18px;
+  position: relative;
+  top: -1px;
+}
+.BlueOceanLogo svg,
+.BlueOceanLogo:hover svg {
+  height: 20px;
+  fill: white;
+  top: 1px;
+  position: relative;
+}
+.ContentPageHeader,
+.ResultPageHeader {
+  color: white;
+}
+.ContentPageHeader a,
+.ResultPageHeader a,
+.ContentPageHeader a:hover,
+.ResultPageHeader a:hover {
+  color: white;
+}
+.ContentPageHeader-user {
+  display: flex;
+  height: 100%;
+  padding-left: 1em;
+}
+.ContentPageHeader-user * {
+  margin-left: 1em;
+}
+.ContentPageHeader-user .btn-sign-in {
+  background: none;
+  min-width: 0;
+  border-color: rgba(0, 0, 0, 0);
+}
+.ContentPageHeader-user .btn-sign-in:hover {
+  border-color: white;
+}
+.ContentPageHeader-user .btn-sign-up {
+  background: none;
+  min-width: 0;
+  border-color: white;
+}
+.ContentPageHeader-user .user-component {
+  display: inline-block;
+  align-items: center;
+  height: 100%;
+}
+.ContentPageHeader-user .user-component.icon {
+  padding-top: 13px;
+}
+.ContentPageHeader-user .user-component.icon svg {
+  fill: white;
+  width: 24px;
+  height: 24px;
+}
+.ContentPageHeader-user .user-component.button-bar {
+  padding-top: 11px;
+}
+.ResultPageHeader-run {
+  padding-left: 1em;
+  display: flex;
+  align-items: center;
+}
+.ResultPageHeader-run > * + * {
+  margin-left: 1em;
+}
+.ResultPageHeader-run button {
+  min-width: 0;
+  color: white;
+  border-color: white;
+}
+.ResultPageHeader-run button:hover {
+  color: white;
+  border-color: white;
+}
+.ContentPageHeader-main,
+.ResultPageHeader-main {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.ContentPageHeader-main > * + *,
+.ResultPageHeader-main > * + * {
+  margin-left: 10px;
+}
+.ResultPageHeader-indicator {
+  margin-right: 10px;
+  height: 24px;
+}
+.ResultPageHeader-title {
+  display: flex;
+  align-items: center;
+}
+.ResultPageHeader-title a {
+  text-decoration: underline;
+}
+.ResultPageHeader-close {
+  margin-left: 24px;
+  cursor: pointer;
+  stroke: none;
+  fill: white;
+}
+.ResultPageHeader-close:hover {
+  stroke: white;
+}
+/* TODO - move this out as soon as we fix the css loading issue */
+.jenkins-pipeline-header {
+  display: inline-block;
+}
+.TextInput.search-pipelines-input {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  margin-left: 20px;
+}
+.TextInput.search-pipelines-input .TextInput-icon.u-icon-left {
+  pointer-events: none;
+  left: 0;
+}
+.TextInput.search-pipelines-input .TextInput-icon.u-icon-left path {
+  fill: #ffffff;
+}
+.TextInput.search-pipelines-input .clear-icon-container {
+  display: none;
+  width: 16px;
+}
+.TextInput.search-pipelines-input .fastsearch-input:not([value=""]) ~ .clear-icon-container {
+  display: block;
+  right: 0;
+}
+.TextInput.search-pipelines-input .fastsearch-input:not([value=""]) ~ .clear-icon-container .clear {
+  width: 16px;
+  cursor: pointer;
+}
+.TextInput.search-pipelines-input .fastsearch-input:not([value=""]) ~ .clear-icon-container .clear path {
+  fill: rgba(255, 255, 255, 0.5);
+}
+.TextInput.search-pipelines-input input.TextInput-control {
+  width: 250px;
+  border: none;
+  color: #ffffff;
+  font-size: 18px;
+  padding-top: 0px;
+  padding-right: 41px;
+  padding-bottom: 0px;
+  padding-left: 30px;
+  cursor: pointer;
+}
+.TextInput.search-pipelines-input input.TextInput-control::-webkit-input-placeholder {
+  color: transparent;
+}
+.TextInput.search-pipelines-input input.TextInput-control::-moz-placeholder {
+  color: transparent;
+}
+.TextInput.search-pipelines-input input.TextInput-control:-ms-input-placeholder {
+  color: transparent;
+}
+.TextInput.search-pipelines-input input.TextInput-control[value=""] {
+  width: 20px;
+  padding-left: 25px;
+}
+.TextInput.search-pipelines-input input.TextInput-control:focus {
+  padding-left: 30px;
+  width: 250px;
+  cursor: inherit;
+}
+.TextInput.search-pipelines-input input.TextInput-control:focus::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+.TextInput.search-pipelines-input input.TextInput-control:focus::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+.TextInput.search-pipelines-input input.TextInput-control:focus:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+.no-search-results-container {
+  text-align: center;
+}
+/* End of TODO */
+
+/*# sourceMappingURL=blueocean-core-js.css.map */
