@@ -3,15 +3,15 @@ def version = "${env.BUILD_NUMBER}"
 node('docker') {
     stage 'Checkout'
     git changelog: false, poll: false, url: 'https://github.com/aatarasoff/spring-boot-example-for-jenkins-pipeline'
-    
+
     stage 'Build jar'
     def server = Artifactory.server 'artifactory'
     def rtGradle = Artifactory.newGradleBuild()
     rtGradle.useWrapper = true
     rtGradle.deployer server: server, repo: 'maven'
-    
+
     def gradleVersion = '-Pversion=' + version
-    
+
     rtGradle.run switches: gradleVersion, tasks: 'build'
 
     stage 'QA'
@@ -47,21 +47,30 @@ node('docker') {
 
   stage 'Post-deploy check'
   def checkCommand = createCheckCommand(version)
-  waitUntil {
-    try {
-      sh "${checkCommand}"
-      true
-    } catch(error) {
-      sleep 10
-      currentBuild.result = 'SUCCESS'
-      false
-    }
-  }
 
-  stage 'Finalize'
-  docker.withServer('tcp://socatdockersock:2375') {
-    sh "docker rm -f demo${version}"
-    sh "docker rmi -f docker.artifactory:8000/demo:${version}"
+  def i = 0
+
+  try {
+    waitUntil {
+      try {
+        sh "${checkCommand}"
+        true
+      } catch(error) {
+        if (i > 1) {
+          currentBuild.result = 'FAILURE'
+          return true
+        }
+        sleep 10
+        currentBuild.result = 'SUCCESS'
+        false
+      }
+    }
+  } finally {
+    stage 'Finalize'
+    docker.withServer('tcp://socatdockersock:2375') {
+      sh "docker rm -f demo${version}"
+      sh "docker rmi -f docker.artifactory:8000/demo:${version}"
+    }
   }
 }
 
